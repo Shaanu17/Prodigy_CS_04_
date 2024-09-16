@@ -1,5 +1,5 @@
 In this i created a basic keylogger program form pre-build libraries that records and logs keystrokes.
-Keyloggers, which record keystrokes, have serious ethical and legal implications. It is essential to only use such software in authorized environments, where users are fully aware of its presence (e.g., for personal development and research on your own systems, or when you have explicit permission to monitor activities on a device).
+Keyloggers, which record keystrokes, have serious ethical and legal implications. It is essential to only use such software in authorized environments, where users are fully aware of its presence.
 
 How It Works:
 The program will log every keystroke made by the user.
