@@ -9,7 +9,8 @@ We'll use the pynput library to capture keystrokes.
 To run the keylogger, you need to install the pynput library, which allows you to monitor input devices like the keyboard.
 
 Run the following command in your terminal or command prompt to install pynput
-Create a python script and save the scipt with extension .py
+Here is how to install pynput in cmd: pip install pynput 
+Run the script and save the scipt with extension .py
 Open your terminal or command prompt and navigate to the folder where the script is saved.
 Run the keylogger using python filename.py
 After running the program, you can open the key_log.txt file to see the recorded keystrokes.
