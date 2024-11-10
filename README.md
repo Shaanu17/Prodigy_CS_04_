@@ -1,4 +1,4 @@
-In this i created a basic keylogger program form pre-build libraries that records and logs keystrokes.
+It is a basic keylogger program from pre-build libraries that records and logs keystrokes.
 Keyloggers, which record keystrokes, have serious ethical and legal implications. It is essential to only use such software in authorized environments, where users are fully aware of its presence.
 
 How It Works:
